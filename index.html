@@ -1,44 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CV Emil Awaliadi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css" integrity="sha512-TzeemgHmrSO404wTLeBd76DmPp5TjWY/f2SyZC6/3LsutDYMVYfOx2uh894kr0j9UM6x39LFHKTeLn99iz378A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
   </head>
+  <style>
+    /* Add custom CSS styles for navigation */
+    #navigasi {
+      background-color: #0080ff; /* Dark background color */
+      padding: 10px 0; /* Add some padding */
+    }
+  
+    .nav-link {
+      color: #fff; /* Text color */
+      font-weight: bold; /* Bold font */
+      transition: color 0.3s; /* Smooth color transition */
+    }
+  
+    .nav-link:hover {
+      color: #0008ff; /* Change text color on hover */
+    }
+  
+    .nav-link.active {
+      color: #000000; /* Active link text color */
+    }
+    .container {
+      margin-top: 25px;
+    }
+  </style>
   <body>
-    <Div class="container">
-        <div class="row" id="header">
-            <div class="col-8">
-                <div class="row">
-                    <h1>Emil Awaliadi</h1>
-                </div>
-                <div class="row">
-                    <h5>Web Development,Back End Development, Software Quality Assurance</h5>
-                </div>
-            </div>
+    
+    <div class="container">
+      <div class="row" id="header" style=" background-color: rgb(32, 40, 134); color: white;  ">
+          <div class="col-4 mx-auto pt-2">
+              <img : width="200px" src="images/wa.jpeg" class="img-thumbnail rounded-circle mx-auto d-block" alt="Yuta's Image">
+              <div class="nama text-center">
+                  <h4 class="fw-bold">Emil Awaliadi</h4>
+                  <h5>Backend Developer</h5>
+                  <p>emilawaliadi99@mail.com | 081503250644 </p>
+              </div>
+          </div>
+    
+      </div>
+  </div>
+  
+  
+      <div class="row" id="navigasi">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              onclick="navigation('profile')"
+              >Profile</a>
             
-            <div class="col-4">
-                <img src="Yuta-Okkotsu.jpg" alt="foto aing"  style="height: 150px; margin-top: 10px;">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="navigation('edu')"
+              >Educatios</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="navigation('exp')"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="navigation('skill')"
+              >Skills</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="row" id="profile">
+        <div class="col-md-6 mx-auto mt-5">
+          <h2 class="fw-bolder text-center">Profile</h2>
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <th scope="row">Nama</th>
+                <td>Emil Awaliadi</td>
+              </tr>
+              <tr>
+                <th scope="row">Tempat Lahir</th>
+                <td>Tasikmalaya</td>
+              </tr>
+              <tr>
+                <th scope="row">Tanggal Lahir</th>
+                <td>26 Desember 2004</td>
+              </tr>
+              <tr>
+                <th scope="row">Kewarganegaraan</th>
+                <td>Indonesia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row" id="education">
+        <div class="col-md-6 mx-auto mt-5">
+          <h2 class="fw-bolder text-center">Education</h2>
+          <ul class="list-group">
+              <li class="list-group-item" style="position: relative;"> MI PANGKALAN <span style="position: absolute; right: 0;">(2010-2016)</span></li>
+              <li class="list-group-item" style="position: relative;"> MTsN 2 TASIKMALAYA <span style="position: absolute; right: 0;">(2017-2019)</span></li>
+              <li class="list-group-item" style="position: relative;"> SMK MANANGGA PRATAMA TASIKMALAYA <span style="position: absolute; right: 0;">(2020-2023)</span></li>
+              <li class="list-group-item" style="position: relative;"> POLITEKNIK LP3I TASIKMALAYA <span style="position: absolute; right: 0;">(2024-2027)</span></li>
+          </ul>
+        </div>
+     
+      </div>
+      <div class="row" id="Experience">
+        <h2 class="mt-4 fw-bolder text-center">Experience </h2>
+        <!-- experience meggunakan listgroup dari bootstrap -->
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <div class="list-group ">
+                <div class="list-group">
+                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                   <div class="d-flex w-100 justify-content-between">
+                     <h5 class="mb-1">Admin Sosial Media Barcelona FC</h5>
+                     <small class="text-muted">Now</small>
+                   </div>
+                   <p class="mb-1">my experience was that I had an interenship for 3 months at the Barcelona FC Admin on 17 January 2023-17 March 2023
+                   </p>
+       
+                 </a>
+                </div>
+                </div>
             </div>
+          </div>  
         </div>
-        <div class="row" id="navigasi">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
         </div>
-    </Div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <div class="row" id="skills">
+          <div class="col-md-6 mx-auto">
+            <h2 class="mt-4 fw-bolder text-center text-dark">Skill</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                  </div>
+                <div class="progress mt-4">
+                  <div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">JS</div>
+                 
+                </div>
+                <div class="progress mt-4">
+                  <div class="progress-bar bg-success " role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                 
+                </div>
+              </div>
+            </div>
+          
+  
+          </div>
+        </div>
+      </div>
+    <script>
+      function navigation(id) {
+        // alert('Cek id: '+id);
+        if (id === "profile") {
+          document.getElementById("profile").style.display = "block";
+          document.getElementById("education").style.display = "none";
+          document.getElementById("Experience").style.display = "none";
+          document.getElementById("skills").style.display = "none";
+        } else if (id === "edu") {
+          document.getElementById("education").style.display = "block";
+          document.getElementById("profile").style.display = "none";
+          document.getElementById("Experience").style.display = "none";
+          document.getElementById("skills").style.display = "none";
+        } else if (id === "exp") {
+          document.getElementById("Experience").style.display = "block";
+          document.getElementById("profile").style.display = "none";
+          document.getElementById("education").style.display = "none";
+          document.getElementById("skills").style.display = "none";
+        } else  {
+          document.getElementById("skills").style.display = "block";
+          document.getElementById("profile").style.display = "none";
+          document.getElementById("Experience").style.display = "none";
+          document.getElementById("education").style.display = "none";
+        }
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+
